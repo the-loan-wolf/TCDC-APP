@@ -1,0 +1,137 @@
+<!--hello-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+  
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:textSize="50dp" />
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="2">
+      
+      <TextView
+          android:id="@+id/neutrophilTotal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="0"
+          android:textSize="50dp"
+          android:layout_weight="1"/>
+          <!--android:gravity="top|center"/>-->
+      
+      <ImageView
+          android:id="@+id/neutrophil"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/neutrophil"
+          android:layout_weight="1"/>
+          <!--android:scaleType="centerCrop"-->
+          <!--android:layout_gravity="left"/>-->
+      
+    </LinearLayout>
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="2">
+      
+      <TextView
+          android:id="@+id/basoTotal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="0"
+          android:textSize="50dp" 
+          android:layout_weight="1"/>
+      
+      <ImageView
+          android:id="@+id/baso"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/baso"
+          android:layout_weight="1"/>
+          <!--android:scaleType="centerCrop"-->
+      
+    </LinearLayout>
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="2">
+      
+      <TextView
+          android:id="@+id/eosinoTotal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="0"
+          android:textSize="50dp" 
+          android:layout_weight="1"/>
+      
+      <ImageView
+          android:id="@+id/eosino"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/eosino"
+          android:layout_weight="1" />
+          <!--android:scaleType="centerCrop"-->
+      
+    </LinearLayout>
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="2">
+      
+      <TextView
+          android:id="@+id/lymphoTotal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="0"
+          android:textSize="50dp" 
+          android:layout_weight="1"/>
+      
+      <ImageView
+          android:id="@+id/lympho"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/lympho"
+          android:layout_weight="1"/>
+          <!--android:scaleType="centerCrop"-->
+      
+    </LinearLayout>
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="2">
+      
+      <TextView
+          android:id="@+id/monoTotal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="0"
+          android:textSize="50dp" 
+          android:layout_weight="1"/>
+      
+      <ImageView
+          android:id="@+id/mono"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/mono"
+          android:layout_weight="1"/>
+          <!--android:scaleType="centerCrop"-->
+      
+    </LinearLayout>
+
+</LinearLayout>
