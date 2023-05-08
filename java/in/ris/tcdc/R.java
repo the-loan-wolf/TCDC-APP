@@ -23,26 +23,21 @@ public final class R {
         public static final int old=0x7f020006;
     }
     public static final class id {
-        public static final int baso=0x7f080008;
-        public static final int basoTotal=0x7f080007;
-        public static final int choose_file_button=0x7f08000c;
-        public static final int eosino=0x7f080006;
-        public static final int eosinoTotal=0x7f080005;
-        public static final int itemTextView=0x7f08000b;
-        public static final int lympho=0x7f080004;
-        public static final int lymphoTotal=0x7f080003;
-        public static final int mono=0x7f08000a;
-        public static final int monoTotal=0x7f080009;
-        public static final int neutrophil=0x7f080002;
-        public static final int neutrophilTotal=0x7f080001;
-        public static final int output_textview=0x7f08000e;
-        public static final int path_textview=0x7f08000d;
-        public static final int total=0x7f080000;
+        public static final int baso=0x7f080007;
+        public static final int basoTotal=0x7f080006;
+        public static final int eosino=0x7f080005;
+        public static final int eosinoTotal=0x7f080004;
+        public static final int lympho=0x7f080003;
+        public static final int lymphoTotal=0x7f080002;
+        public static final int mono=0x7f080009;
+        public static final int monoTotal=0x7f080008;
+        public static final int neutrophil=0x7f080001;
+        public static final int neutrophilTotal=0x7f080000;
+        public static final int total=0x7f08000a;
+        public static final int undoBtn=0x7f08000b;
     }
     public static final class layout {
         public static final int main=0x7f040000;
-        public static final int single_list=0x7f040001;
-        public static final int storage_activity=0x7f040002;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

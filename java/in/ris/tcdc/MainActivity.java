@@ -9,6 +9,8 @@ import android.widget.TextView;
 import java.lang.Integer;
 import java.util.Stack;
 import android.util.Log;
+import android.view.Window;
+import android.widget.Button;
 
  
 public class MainActivity extends Activity {
@@ -17,14 +19,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
  
-        int totalCount = 0;
-        int neutrophil = 0;
-        int basophil = 0;
-        int eosinophil = 0;
-        int monocyte = 0;
-        int lymphocyte = 0;
+        int totalCount = 00;
+        int neutrophil = 00;
+        int basophil = 00;
+        int eosinophil = 00;
+        int monocyte = 00;
+        int lymphocyte = 00;
         
         final TextView totalView = (TextView)findViewById(R.id.total);
         
@@ -83,6 +86,8 @@ public class MainActivity extends Activity {
             //Toast.makeText(getApplicationContext(),"Basophil",Toast.LENGTH_SHORT).show();
           }
         });
+        
+//----------------------------------------------
 
         ImageView mono = (ImageView)findViewById(R.id.mono);
         mono.setOnClickListener(new View.OnClickListener(){
@@ -97,7 +102,14 @@ public class MainActivity extends Activity {
           }
         });
         
-        
+//--------------------------------------------------
+        Button button = (Button)findViewById(R.id.undoBtn);
+        button.setOnClickListener(new View.OnClickListener(){
+          @Override
+          public void onClick(View v){
+            undo(stack, myV, totalView);
+          }
+        });
         
         
         
@@ -108,9 +120,47 @@ public class MainActivity extends Activity {
           myV[0]++;
           v.setText("Total: " + Integer.toString(myV[0]));
         }
+        
+    public void subFromTotal(int[] myV, TextView v) {
+          myV[0]--;
+          v.setText("Total: " + Integer.toString(myV[0]));
+        }
     
-    public void undo(Stack<String> stack) {
-      String name = stack.pop();
-      Log.d("TCDC-log", name);
+    public void decrement(int[] myV, int index, TextView v) {
+          myV[index]--;
+          v.setText("Total: " + Integer.toString(myV[index]));
+        }
+    
+    public void increment(int[] myV, TextView v) {
+          myV[index]++;
+          v.setText("Total: " + Integer.toString(myV[index]));
+        }
+    
+    public void undo(Stack<String> stack,int[] myV, TextView v) {
+      if(!stack.isEmpty()){
+        String name = stack.pop();
+        Log.d("TCDC-log", name);
+        subFromTotal(myV, v);
+        switch(name){
+          case "Neutrophil":
+            myV[1]--;
+            break;
+          case "lymphocyte":
+            myV[2]--;
+            break;
+          case "eosinophil":
+            myV[3]--;
+            break;
+          case "Basophil":
+            myV[4]--;
+            break;
+          case "monocyte":
+            myV[5]--;
+            break;
+        }
+      }else Log.d("TCDC-log", "stack is empty");
+      
+      
+      
     }
 }

@@ -8,6 +8,7 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault"
 		android:resizeableActivity = "true" android:extractNativeLibs="true" android:requestLegacyExternalStorage="true">
         <activity
             android:name=".MainActivity"

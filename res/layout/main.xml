@@ -2,14 +2,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
-  
-    <TextView
-        android:id="@+id/total"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total:"
-        android:textSize="50dp" />
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="8dp">
     
     <LinearLayout
       android:layout_width="match_parent"
@@ -21,7 +16,7 @@
           android:id="@+id/neutrophilTotal"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="0"
+          android:text="00"
           android:textSize="50dp"
           android:layout_weight="1"/>
           <!--android:gravity="top|center"/>-->
@@ -45,7 +40,7 @@
           android:id="@+id/lymphoTotal"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="0"
+          android:text="00"
           android:textSize="50dp" 
           android:layout_weight="1"/>
       
@@ -69,7 +64,7 @@
           android:id="@+id/eosinoTotal"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="0"
+          android:text="00"
           android:textSize="50dp" 
           android:layout_weight="1"/>
       
@@ -92,7 +87,7 @@
           android:id="@+id/basoTotal"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="0"
+          android:text="00"
           android:textSize="50dp" 
           android:layout_weight="1"/>
       
@@ -115,7 +110,7 @@
           android:id="@+id/monoTotal"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="0"
+          android:text="00"
           android:textSize="50dp" 
           android:layout_weight="1"/>
       
@@ -126,6 +121,29 @@
           android:src="@drawable/mono"
           android:layout_weight="1"/>
       
+    </LinearLayout>
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="2">
+      
+      <TextView
+          android:id="@+id/total"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Total:00"
+          android:layout_weight="1"/>
+          
+      <Button
+          android:id="@+id/undoBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="undo"
+          android:textColor="#070404"
+          android:layout_weight="1"/>
+          
     </LinearLayout>
 
 </LinearLayout>

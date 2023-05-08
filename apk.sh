@@ -30,7 +30,7 @@ apksigner sign --ks riskeystore.ks --ks-pass pass:asdfzxcv --in gen.apk --out ge
 
 rm -rf gen.apk gen-signed.apk.idsig
 
-#echo "=============installing APK=============}"
+echo "=============installing APK=============}"
 
-#pm install gen-signed.apk
+pm install gen-signed.apk
 #ecj-24 --module-path libs/androidx/ --add-modules core,appcompat -log log.xml -verbose
