@@ -131,7 +131,7 @@ public class MainActivity extends Activity {
           v.setText("Total: " + Integer.toString(myV[index]));
         }
     
-    public void increment(int[] myV, TextView v) {
+    public void increment(int[] myV, TextView v, int index) {
           myV[index]++;
           v.setText("Total: " + Integer.toString(myV[index]));
         }
