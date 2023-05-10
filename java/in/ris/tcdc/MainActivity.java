@@ -137,6 +137,12 @@ public class MainActivity extends Activity {
         }
     
     public void undo(Stack<String> stack,int[] myV, TextView v) {
+
+      TextView neutroView = (TextView)findViewById(R.id.neutrophilTotal);
+      TextView lymphoView = (TextView)findViewById(R.id.lymphoTotal);
+      TextView eosinoView = (TextView)findViewById(R.id.eosinoTotal);
+      TextView basoView = (TextView)findViewById(R.id.basoTotal);
+      TextView monoView = (TextView)findViewById(R.id.monoTotal);
       if(!stack.isEmpty()){
         String name = stack.pop();
         Log.d("TCDC-log", name);
@@ -144,18 +150,23 @@ public class MainActivity extends Activity {
         switch(name){
           case "Neutrophil":
             myV[1]--;
+            neutroView.setText(Integer.toString(myV[1]));
             break;
           case "lymphocyte":
-            myV[2]--;
+            myV[4]--;
+            lymphoView.setText(Integer.toString(myV[4]));
             break;
           case "eosinophil":
             myV[3]--;
+            eosinoView.setText(Integer.toString(myV[3]));
             break;
           case "Basophil":
-            myV[4]--;
+            myV[2]--;
+            basoView.setText(Integer.toString(myV[2]));
             break;
           case "monocyte":
             myV[5]--;
+            monoView.setText(Integer.toString(myV[5]));
             break;
         }
       }else Log.d("TCDC-log", "stack is empty");
