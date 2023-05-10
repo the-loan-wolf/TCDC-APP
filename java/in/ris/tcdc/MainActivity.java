@@ -11,6 +11,7 @@ import java.util.Stack;
 import android.util.Log;
 import android.view.Window;
 import android.widget.Button;
+import android.view.WindowManager;;
 
  
 public class MainActivity extends Activity {
@@ -21,6 +22,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
  
         int totalCount = 00;
         int neutrophil = 00;
@@ -40,11 +42,13 @@ public class MainActivity extends Activity {
           @Override
           public void onClick(View v){
             TextView neutroView = (TextView)findViewById(R.id.neutrophilTotal);
-            myV[1]++;
-            addToTotal(myV, totalView);
-            neutroView.setText(Integer.toString(myV[1]));
-            stack.push("Neutrophil");
-            //Toast.makeText(getApplicationContext(),"Neutrophil " + myV[1],Toast.LENGTH_SHORT).show();
+            if(myV[0] != 100){
+              myV[1]++;
+              addToTotal(myV, totalView);
+              neutroView.setText(Integer.toString(myV[1]));
+              stack.push("Neutrophil");
+              //Toast.makeText(getApplicationContext(),"Neutrophil " + myV[1],Toast.LENGTH_SHORT).show();
+            }
           }
         });
         
@@ -53,11 +57,14 @@ public class MainActivity extends Activity {
           @Override
           public void onClick(View v){
             TextView lymphoView = (TextView)findViewById(R.id.lymphoTotal);
-            myV[4]++;
-            addToTotal(myV, totalView);
-            lymphoView.setText(Integer.toString(myV[4]));
-            stack.push("lymphocyte");
-            //Toast.makeText(getApplicationContext(),"lymphocyte",Toast.LENGTH_SHORT).show();
+            if(myV[0] != 100){
+              myV[4]++;
+              addToTotal(myV, totalView);
+              lymphoView.setText(Integer.toString(myV[4]));
+              stack.push("lymphocyte");
+              //Toast.makeText(getApplicationContext(),"lymphocyte",Toast.LENGTH_SHORT).show();
+
+            }
           }
         });
         
@@ -66,11 +73,14 @@ public class MainActivity extends Activity {
           @Override
           public void onClick(View v){
             TextView eosinoView = (TextView)findViewById(R.id.eosinoTotal);
-            myV[3]++;
-            addToTotal(myV, totalView);
-            eosinoView.setText(Integer.toString(myV[3]));
-            stack.push("eosinophil");
-            //Toast.makeText(getApplicationContext(),"eosinophil",Toast.LENGTH_SHORT).show();
+            if(myV[0] != 100){
+
+              myV[3]++;
+              addToTotal(myV, totalView);
+              eosinoView.setText(Integer.toString(myV[3]));
+              stack.push("eosinophil");
+              //Toast.makeText(getApplicationContext(),"eosinophil",Toast.LENGTH_SHORT).show();
+            }
           }
         });
         
@@ -79,11 +89,14 @@ public class MainActivity extends Activity {
           @Override
           public void onClick(View v){
             TextView basoView = (TextView)findViewById(R.id.basoTotal);
-            myV[2]++;
-            addToTotal(myV, totalView);
-            basoView.setText(Integer.toString(myV[2]));
-            stack.push("Basophil");
-            //Toast.makeText(getApplicationContext(),"Basophil",Toast.LENGTH_SHORT).show();
+            if(myV[0] != 100){
+
+              myV[2]++;
+              addToTotal(myV, totalView);
+              basoView.setText(Integer.toString(myV[2]));
+              stack.push("Basophil");
+              //Toast.makeText(getApplicationContext(),"Basophil",Toast.LENGTH_SHORT).show();
+            }
           }
         });
         
@@ -94,11 +107,14 @@ public class MainActivity extends Activity {
           @Override
           public void onClick(View v){
             TextView monoView = (TextView)findViewById(R.id.monoTotal);
-            myV[5]++;
-            addToTotal(myV, totalView);
-            monoView.setText(Integer.toString(myV[5]));
-            stack.push("monocyte");
-            //Toast.makeText(getApplicationContext(),"monocyte",Toast.LENGTH_SHORT).show();
+            if(myV[0] != 100){
+
+              myV[5]++;
+              addToTotal(myV, totalView);
+              monoView.setText(Integer.toString(myV[5]));
+              stack.push("monocyte");
+              //Toast.makeText(getApplicationContext(),"monocyte",Toast.LENGTH_SHORT).show();
+            }
           }
         });
         
