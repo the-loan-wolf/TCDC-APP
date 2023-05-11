@@ -18,7 +18,8 @@
           android:layout_height="wrap_content"
           android:text="0"
           android:textSize="50dp"
-          android:layout_weight="1"/>
+          android:layout_weight="1"
+          android:textColor="#5a595b"/>
           <!--android:gravity="top|center"/>-->
       
       <ImageView
@@ -42,7 +43,8 @@
           android:layout_height="wrap_content"
           android:text="0"
           android:textSize="50dp" 
-          android:layout_weight="1"/>
+          android:layout_weight="1"
+          android:textColor="#5a595b"/>
       
       <ImageView
           android:id="@+id/lympho"
@@ -66,7 +68,8 @@
           android:layout_height="wrap_content"
           android:text="0"
           android:textSize="50dp" 
-          android:layout_weight="1"/>
+          android:layout_weight="1"
+          android:textColor="#5a595b"/>
       
       <ImageView
           android:id="@+id/eosino"
@@ -89,7 +92,8 @@
           android:layout_height="wrap_content"
           android:text="0"
           android:textSize="50dp" 
-          android:layout_weight="1"/>
+          android:layout_weight="1"
+          android:textColor="#5a595b"/>
       
       <ImageView
           android:id="@+id/baso"
@@ -112,7 +116,8 @@
           android:layout_height="wrap_content"
           android:text="0"
           android:textSize="50dp" 
-          android:layout_weight="1"/>
+          android:layout_weight="1"
+          android:textColor="#5a595b"/>
       
       <ImageView
           android:id="@+id/mono"
@@ -135,7 +140,8 @@
           android:layout_height="wrap_content"
           android:text="Total:0"
           android:textSize="30dp"
-          android:layout_weight="1"/>
+          android:layout_weight="1"
+          android:textColor="#5a595b"/>
           
       <Button
           android:id="@+id/undoBtn"
