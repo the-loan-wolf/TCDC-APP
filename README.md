@@ -1,11 +1,47 @@
-# TCDC – Blood Cell Counter
+<div align="center">
+  <a href="https://github.com/the-loan-wolf/TCDC-APP">
+    <img src="https://github.com/the-loan-wolf/TCDC-APP/blob/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="TCDC Logo" width="100" height="100">
+  </a>
+  <h1>TCDC</h1>
+  <p>White Blood Cell Counter</p>
+</div>
+
+<!-- Badges -->
+<div align="center">
+  <a href="https://github.com/the-loan-wolf/TCDC-APP/releases">
+    <img src="https://img.shields.io/github/v/release/the-loan-wolf/TCDC-APP" alt="Build Status"/>
+  </a>
+  <a href="https://github.com/the-loan-wolf/TCDC-APP/releases/download/Jetpack-1.0/TCDC.1.0.apk">
+    <img src="https://img.shields.io/github/downloads/the-loan-wolf/TCDC-APP/latest/total" alt="GitHub release"/>
+  </a>
+  <a href="https://www.gnu.org/licenses/gpl-3.0.txt">
+    <img src="https://img.shields.io/github/license/the-loan-wolf/TCDC-APP" alt="License"/>
+  </a>
+</div>
+
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#features">Features</a> •
+  <a href="#screenshots">Screenshots</a> •
+  <a href="#download">Download</a> •
+  <a href="#build-and-run">Build</a> •
+  <a href="#license">License</a>
+</p>
+
+## About
 
 TCDC is a modern Android application for manual blood cell differential counting.
 It is designed for laboratory and microscopy workflows where fast, accurate, and distraction-free counting is required.
 
 The app is fully rebuilt using **Jetpack Compose**, **Material 3**, and **Kotlin Flow**, replacing legacy View-based implementations with a modern, reactive architecture.
 
+## Screenshots
+
 ![com ris tcdc-20](https://github.com/user-attachments/assets/e10f06f9-6a66-4947-a740-4d9134c08d59)
+
+## Download: 
+
+https://github.com/the-loan-wolf/TCDC-APP/releases
 
 ## Features
 
@@ -112,7 +148,7 @@ This ensures:
 * Kotlin 2.0+
 * Minimum SDK: 24
 
-## Build & Run
+## Build and Run
 
 1. Clone the repository
 2. Open the project in Android Studio
@@ -124,6 +160,10 @@ This ensures:
 * Haptic feedback will not work on emulators
 * System haptic feedback must be enabled on the device
 * Material icons are optional and loaded via `material-icons-extended`
+
+## License
+
+* GPL V3
 
 ## Future Improvements
 * [ ] Fix Haptic
