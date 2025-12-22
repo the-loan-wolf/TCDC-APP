@@ -5,6 +5,8 @@ It is designed for laboratory and microscopy workflows where fast, accurate, and
 
 The app is fully rebuilt using **Jetpack Compose**, **Material 3**, and **Kotlin Flow**, replacing legacy View-based implementations with a modern, reactive architecture.
 
+![com ris tcdc-20](https://github.com/user-attachments/assets/e10f06f9-6a66-4947-a740-4d9134c08d59)
+
 ## Features
 
 * Manual blood cell differential counting
